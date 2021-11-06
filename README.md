@@ -3,6 +3,8 @@ davekok\controller
 
 A general purpose controller.
 
+THIS IS A PROOF OF CONCEPT, NOT PRODUCTION READY.
+
 Purpose
 --------------------------------------------------------------------------------
 
@@ -26,14 +28,14 @@ In this controller vocabulary shall be centered around webcomponents. Webcompone
 
 ### Comparison
 
-                  | Client Oriented Architecture | Service Oriented Architecture
---------------------------------------------------------------------------------
-IO                | Synchronous                  | Asynchronous
-Streams           | Single                       | Multiple
-Threads/Fibers    | No                           | Yes
-Output vocabulary | UI focused                   | Model focused
-Input vocabulary  | Data entry focused           | Invocation/command focused
-Standalone        | No requires controller       | Yes, controller is embedded
-Cinefine tag      | Obvious                      | Complicated
+|                   | COA                    | SOA
+|-------------------|------------------------|-----------------------------|
+| IO                | Synchronous            | Asynchronous                |
+| Streams           | Single                 | Multiple                    |
+| Threads/Fibers    | No                     | Yes                         |
+| Output vocabulary | UI focused             | Domain focused              |
+| Input vocabulary  | Data entry focused     | Invocation/command focused  |
+| Standalone        | No requires controller | Yes, controller is embedded |
+| Cinefin tag       | Obvious                | Complicated                 | 
 
-In client oriented architecture only the stream server needs to deal with multiple streams. However, if you don't have to mix both roles being both the server and client it is not that difficult. So just a stream server that is always a stream server or just a stream client that is always a stream client is easiest to do. It is the mixing of roles that makes it difficult.
+In client oriented architecture only the stream server needs to deal with multiple streams. All others simply off load handling multiple streams to the stream server. And read request by request in an infinite loop.
