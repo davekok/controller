@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/http.git",
-                "reference": "02a50d0dcd2d30bf9e0536cd72620b6f9708ab42"
+                "reference": "a33736fec4f861bc24ca28124d72571eb18327ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/http/zipball/02a50d0dcd2d30bf9e0536cd72620b6f9708ab42",
-                "reference": "02a50d0dcd2d30bf9e0536cd72620b6f9708ab42",
+                "url": "https://api.github.com/repos/davekok/http/zipball/a33736fec4f861bc24ca28124d72571eb18327ab",
+                "reference": "a33736fec4f861bc24ca28124d72571eb18327ab",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "source": "https://github.com/davekok/http/tree/main",
                 "issues": "https://github.com/davekok/http/issues"
             },
-            "time": "2021-10-27T13:58:10+00:00"
+            "time": "2021-11-06T08:26:25+00:00"
         },
         {
             "name": "davekok/lalr1",
@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/lalr1.git",
-                "reference": "94297aa4131999235d00fe45880798e59338c518"
+                "reference": "e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/lalr1/zipball/94297aa4131999235d00fe45880798e59338c518",
-                "reference": "94297aa4131999235d00fe45880798e59338c518",
+                "url": "https://api.github.com/repos/davekok/lalr1/zipball/e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9",
+                "reference": "e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 "source": "https://github.com/davekok/lalr1/tree/main",
                 "issues": "https://github.com/davekok/lalr1/issues"
             },
-            "time": "2021-10-27T13:56:05+00:00"
+            "time": "2021-11-06T09:07:31+00:00"
         },
         {
             "name": "davekok/log",
@@ -105,12 +105,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/log.git",
-                "reference": "a290cac42925a0b04c8f6351d5454e154af549df"
+                "reference": "de5d1b4f2c042bdb5c59fbb729386ed589f642d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/log/zipball/a290cac42925a0b04c8f6351d5454e154af549df",
-                "reference": "a290cac42925a0b04c8f6351d5454e154af549df",
+                "url": "https://api.github.com/repos/davekok/log/zipball/de5d1b4f2c042bdb5c59fbb729386ed589f642d1",
+                "reference": "de5d1b4f2c042bdb5c59fbb729386ed589f642d1",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 "source": "https://github.com/davekok/log/tree/main",
                 "issues": "https://github.com/davekok/log/issues"
             },
-            "time": "2021-11-05T08:29:22+00:00"
+            "time": "2021-11-06T08:26:41+00:00"
         },
         {
             "name": "davekok/stream",
@@ -148,12 +148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/stream.git",
-                "reference": "60fe86a9424647cde5711344a16b81996f91bbd2"
+                "reference": "29e375a4294d25bf0b9d174750c27731473240e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/stream/zipball/60fe86a9424647cde5711344a16b81996f91bbd2",
-                "reference": "60fe86a9424647cde5711344a16b81996f91bbd2",
+                "url": "https://api.github.com/repos/davekok/stream/zipball/29e375a4294d25bf0b9d174750c27731473240e9",
+                "reference": "29e375a4294d25bf0b9d174750c27731473240e9",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,7 @@
                 "source": "https://github.com/davekok/stream/tree/main",
                 "issues": "https://github.com/davekok/stream/issues"
             },
-            "time": "2021-10-27T13:55:21+00:00"
+            "time": "2021-11-06T08:25:50+00:00"
         },
         {
             "name": "psr/log",
@@ -766,12 +766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "cf04e88a2e3c56fc1a65488afd493325b4c1bc3e"
+                "reference": "9f37d464d6bc3cf1b379f785b66a2ce77bf523a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/cf04e88a2e3c56fc1a65488afd493325b4c1bc3e",
-                "reference": "cf04e88a2e3c56fc1a65488afd493325b4c1bc3e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9f37d464d6bc3cf1b379f785b66a2ce77bf523a6",
+                "reference": "9f37d464d6bc3cf1b379f785b66a2ce77bf523a6",
                 "shasum": ""
             },
             "require": {
@@ -827,7 +827,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.8"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2"
             },
             "funding": [
                 {
@@ -835,7 +835,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-30T08:01:38+00:00"
+            "time": "2021-11-06T06:50:45+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",

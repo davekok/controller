@@ -69,6 +69,16 @@ case "${1:-}" in
         esac
         ;;
 
+    tag)
+        shift
+        if [ "${1:-}" == "" ]; then
+            echo "error: tag missing"
+            echo "usage: ops tag TAG [NEWTAG]"
+            exit
+        fi
+        buildah tag "$ID:$1" "$ID:${2:-latest}"
+        ;;
+
     update | require)
         CMD="$1"
         shift
@@ -103,7 +113,9 @@ case "${1:-}" in
         ;;
 
     bash)
-        volumes src test
+        if [ "${2:-}" == "dev" ]; then
+            volumes src test dependencies
+        fi
         podman run -it --rm -w /app "${VOLUMES[@]}" "$ID:${2:-dev}" bash
         ;;
 
