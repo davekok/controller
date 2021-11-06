@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/http.git",
-                "reference": "a33736fec4f861bc24ca28124d72571eb18327ab"
+                "reference": "22fe0e68eac507d24ac3898e7dec1640b444e2fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/http/zipball/a33736fec4f861bc24ca28124d72571eb18327ab",
-                "reference": "a33736fec4f861bc24ca28124d72571eb18327ab",
+                "url": "https://api.github.com/repos/davekok/http/zipball/22fe0e68eac507d24ac3898e7dec1640b444e2fe",
+                "reference": "22fe0e68eac507d24ac3898e7dec1640b444e2fe",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "source": "https://github.com/davekok/http/tree/main",
                 "issues": "https://github.com/davekok/http/issues"
             },
-            "time": "2021-11-06T08:26:25+00:00"
+            "time": "2021-11-06T10:10:56+00:00"
         },
         {
             "name": "davekok/lalr1",
@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/lalr1.git",
-                "reference": "e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9"
+                "reference": "5ad7a02d7156b285c38fa55b9c19530c401fde32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/lalr1/zipball/e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9",
-                "reference": "e6243e4a0eaabdbbb5ab604d071d0716ff48b7f9",
+                "url": "https://api.github.com/repos/davekok/lalr1/zipball/5ad7a02d7156b285c38fa55b9c19530c401fde32",
+                "reference": "5ad7a02d7156b285c38fa55b9c19530c401fde32",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
                 "source": "https://github.com/davekok/lalr1/tree/main",
                 "issues": "https://github.com/davekok/lalr1/issues"
             },
-            "time": "2021-11-06T09:07:31+00:00"
+            "time": "2021-11-06T10:09:08+00:00"
         },
         {
             "name": "davekok/log",
@@ -148,12 +148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/stream.git",
-                "reference": "29e375a4294d25bf0b9d174750c27731473240e9"
+                "reference": "1a934f76fb6d11d33f013fee7f480773610c2e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/stream/zipball/29e375a4294d25bf0b9d174750c27731473240e9",
-                "reference": "29e375a4294d25bf0b9d174750c27731473240e9",
+                "url": "https://api.github.com/repos/davekok/stream/zipball/1a934f76fb6d11d33f013fee7f480773610c2e99",
+                "reference": "1a934f76fb6d11d33f013fee7f480773610c2e99",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,7 @@
                 "source": "https://github.com/davekok/stream/tree/main",
                 "issues": "https://github.com/davekok/stream/issues"
             },
-            "time": "2021-11-06T08:25:50+00:00"
+            "time": "2021-11-06T10:07:48+00:00"
         },
         {
             "name": "psr/log",
