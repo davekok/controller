@@ -8,3 +8,5 @@ COPY --from=composer /app/vendor /app/vendor
 COPY src /app/src
 EXPOSE 8080
 EXPOSE 8025
+WORKDIR /app
+CMD ["php", "/app/src/main.php"]

@@ -86,7 +86,7 @@ case "${1:-}" in
         exec "$SELF" build
         ;;
 
-    push)
+    publish)
         podman push "$ID:${2:-latest}"
         ;;
 
@@ -95,15 +95,6 @@ case "${1:-}" in
         shift
         podman run -it --rm -w /app "${VOLUMES[@]}" "$ID:dev" \
             php /app/vendor/bin/phpunit --coverage-html /app/docs/coverage /app/tests $*
-        ;;
-
-    run)
-        if [ "${2:-}" == "dev" ]; then
-            volumes src dependencies
-        else
-            volumes src
-        fi
-        podman run -it --rm -p 8080:8080 -w /app "${VOLUMES[@]}" "$ID:${2:-latest}" php /app/src/main.php
         ;;
 
     check)
@@ -119,8 +110,21 @@ case "${1:-}" in
         podman run -it --rm -w /app "${VOLUMES[@]}" "$ID:${2:-dev}" bash
         ;;
 
+    run)
+        if [ "${2:-}" == "dev" ]; then
+            volumes src dependencies
+        else
+            volumes src
+        fi
+        podman run -it --rm -p 8080:8080 -w /app "${VOLUMES[@]}" "$ID:${2:-latest}" php /app/src/main.php
+        ;;
+
+    status | add | commit | pull | push | stash | diff)
+        git $*
+        ;;
+
     "")
-        echo "Usage: $0 ( login | build | update | require | push | test | run | check | bash)"
+        echo "Usage: $0 ( login | build | update | require | publish | test | run | check | bash | status | add | commit | pull | push | stash | diff)"
         ;;
 
     *)

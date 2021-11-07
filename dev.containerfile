@@ -9,3 +9,4 @@ COPY src /app/src
 COPY tests /app/tests
 EXPOSE 8080
 EXPOSE 8025
+WORKDIR /app
