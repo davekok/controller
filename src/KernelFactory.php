@@ -16,27 +16,28 @@ use Psr\Log\LogLevel;
 
 class KernelFactory
 {
-    private KernelConfig $config;
-    private TimeOut|null $timeOut;
-    private StreamFactory $streamFactory;
-    private LoggerInterface $log;
+    private StreamFactory         $streamFactory;
+    private HttpControllerFactory $httpControllerFactory;
 
     public function __construct(
-        KernelConfig $config,
-        TimeOut|null $timeOut = null,
-        StreamFactory $streamFactory = null,
-        LoggerInterface $log = new Logger(level: LogLevel::DEBUG),
+        private ControllerConfig   $config,
+        TimeOut|null               $timeOut               = null,
+        StreamFactory|null         $streamFactory         = null,
+        HttpControllerFactory|null $httpControllerFactory = null,
+        LoggerInterface            $log                   = new Logger(level: LogLevel::DEBUG),
     ) {
-        $this->config          = $config;
-        $this->timeOut         = $timeOut;
-        $this->log             = $log;
-        $this->streamFactory   = $streamFactory ?? new StreamFactory(log: $this->log);
+        $this->config                = $config;
+        $this->streamFactory         = $streamFactory ?? new StreamFactory($timeOut, $log);
+        $this->httpControllerFactory = $httpControllerFactory ?? new HttpControllerFactory(
+            new RouteControllerFactory($config),
+            new HttpFactory($log),
+        );
     }
 
     public function createKernel(): StreamKernel
     {
         return $this->streamFactory
-            ->createStreamKernel($this->timeOut)
+            ->createStreamKernel()
             ->addStream(
                 stream: $this->streamFactory->createPassiveSocketStream(
                     url: $this->config->httpUrl,
@@ -47,7 +48,7 @@ class KernelFactory
                         )
                     )
                 ),
-                factory: new HttpControllerFactory(new HttpFactory(log: $this->log))
+                factory: $this->httpControllerFactory
             );
     }
 }

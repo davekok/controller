@@ -20,9 +20,10 @@ use Throwable;
 class HttpController implements HttpRequestHandler
 {
     public function __construct(
+        private RouteControllerFactory $routeControllerFactory,
         private Activity $activity,
         private HttpReader $reader,
-        private HttpWriter $writer
+        private HttpWriter $writer,
     ) {
         // $this->activity->enableCrypto(true, STREAM_CRYPTO_METHOD_TLSv1_2_SERVER);
         $this->reader->receive($this);
@@ -43,22 +44,31 @@ class HttpController implements HttpRequestHandler
             $this->activity->andThenClose();
             return;
         }
-        switch ($request->path) {
-            case "/":
-                $this->writer->send(new HttpResponse(
-                    status: HttpStatus::OK,
-                    protocolVersion: $request->protocolVersion,
-                    body: "Hello, world!"
-                ));
-                break;
-            default:
-                $this->writer->send(new HttpResponse(
-                    status: HttpStatus::NOT_FOUND,
-                    protocolVersion: $request->protocolVersion,
-                    body: "Not found"
-                ));
-                break;
+        $response = match ($request->url->path) {
+            "/" => $this->routeControllerFactory->createMainController()->handleRequest($request),
+            default => null,
+        } ?? new HttpResponse(
+            status: HttpStatus::NOT_FOUND,
+            body: "Not found"
+        );
+        $headers           = $response->headers;
+        $headers["Date"]   = date("r");
+        $headers["Server"] = "davekok/controller";
+        if ($response->body !== null) {
+            $headers["Content-Length"] = strlen($response->body);
+            if (isset($headers["Content-Type"]) === false) {
+                $headers["Content-Type"] = 'text/plain; charset="UTF-8"';
+            }
         }
-        $this->reader->receive($this); // get ready for next request
+
+        $this->writer->send(new HttpResponse(
+            status:          $response->status,
+            protocolVersion: $request->protocolVersion,
+            headers:         $headers,
+            body:            $response->body,
+        ));
+
+        // get ready for next request
+        $this->reader->receive($this);
     }
 }

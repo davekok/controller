@@ -10,11 +10,15 @@ use davekok\stream\ControllerFactory;
 
 class HttpControllerFactory implements ControllerFactory
 {
-    public function __construct(private HttpFactory $httpFactory = new HttpFactory()) {}
+    public function __construct(
+        private RouteControllerFactory $routeControllerFactory,
+        private HttpFactory $httpFactory = new HttpFactory(),
+    ) {}
 
     public function createController(Activity $activity): HttpController
     {
         return new HttpController(
+            $this->routeControllerFactory,
             $activity,
             $this->httpFactory->createReader($activity),
             $this->httpFactory->createWriter($activity)
