@@ -14,7 +14,6 @@ use davekok\lalr1\ParserException;
 use davekok\lalr1\EmptySolutionParserException;
 use davekok\stream\Activity;
 use davekok\stream\ReaderException;
-use Psr\Log\LoggerInterface;
 use Throwable;
 
 class MainController

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "778d8945baa93968e574c83c672f8263",
+    "content-hash": "42ec62ed1ee8834ef389877cb067929d",
     "packages": [
         {
             "name": "davekok/http",
@@ -12,18 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/http.git",
-                "reference": "971b726c03c354767bb5f23546f943f5fdea9be5"
+                "reference": "0ad7a0fc9a37f91b41bb978054576e4ea4995b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/http/zipball/971b726c03c354767bb5f23546f943f5fdea9be5",
-                "reference": "971b726c03c354767bb5f23546f943f5fdea9be5",
+                "url": "https://api.github.com/repos/davekok/http/zipball/0ad7a0fc9a37f91b41bb978054576e4ea4995b62",
+                "reference": "0ad7a0fc9a37f91b41bb978054576e4ea4995b62",
                 "shasum": ""
             },
             "require": {
                 "davekok/lalr1": "dev-main",
-                "davekok/stream": "dev-main",
-                "psr/log": "^3.0"
+                "davekok/stream": "dev-main"
             },
             "require-dev": {
                 "phpunit/php-code-coverage": "^9.2.x-dev",
@@ -51,7 +50,7 @@
                 "source": "https://github.com/davekok/http/tree/main",
                 "issues": "https://github.com/davekok/http/issues"
             },
-            "time": "2021-11-07T14:48:46+00:00"
+            "time": "2021-11-15T15:20:45+00:00"
         },
         {
             "name": "davekok/lalr1",
@@ -59,17 +58,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/lalr1.git",
-                "reference": "fed2b6f024af1c9f022de39817a5f9218b6773b8"
+                "reference": "ced581830e3888325b2f4565ac10e3ccb4533fbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/lalr1/zipball/fed2b6f024af1c9f022de39817a5f9218b6773b8",
-                "reference": "fed2b6f024af1c9f022de39817a5f9218b6773b8",
+                "url": "https://api.github.com/repos/davekok/lalr1/zipball/ced581830e3888325b2f4565ac10e3ccb4533fbe",
+                "reference": "ced581830e3888325b2f4565ac10e3ccb4533fbe",
                 "shasum": ""
             },
             "require": {
-                "davekok/stream": "dev-main",
-                "psr/log": "^3.0"
+                "davekok/stream": "dev-main"
             },
             "require-dev": {
                 "phpunit/php-code-coverage": "^9.2.x-dev",
@@ -97,50 +95,7 @@
                 "source": "https://github.com/davekok/lalr1/tree/main",
                 "issues": "https://github.com/davekok/lalr1/issues"
             },
-            "time": "2021-11-07T14:47:02+00:00"
-        },
-        {
-            "name": "davekok/log",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/davekok/log.git",
-                "reference": "471bb180c84d540c05303d3e80b99b136111e667"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/davekok/log/zipball/471bb180c84d540c05303d3e80b99b136111e667",
-                "reference": "471bb180c84d540c05303d3e80b99b136111e667",
-                "shasum": ""
-            },
-            "require": {
-                "psr/log": "^3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "davekok\\log\\": "src/"
-                }
-            },
-            "license": [
-                "UNLICENSE"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Kok",
-                    "email": "email@davekok.nl"
-                }
-            ],
-            "description": "A log implementation of Psr\\Log",
-            "support": {
-                "source": "https://github.com/davekok/log/tree/main",
-                "issues": "https://github.com/davekok/log/issues"
-            },
-            "time": "2021-11-07T07:29:26+00:00"
+            "time": "2021-11-15T15:09:05+00:00"
         },
         {
             "name": "davekok/stream",
@@ -148,16 +103,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davekok/stream.git",
-                "reference": "839333ddcfdcb01bd6b00eb6c29b0b4d95add33f"
+                "reference": "5cd6e1756988ea9aecdcd8cce2bbd55a5ab4db91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davekok/stream/zipball/839333ddcfdcb01bd6b00eb6c29b0b4d95add33f",
-                "reference": "839333ddcfdcb01bd6b00eb6c29b0b4d95add33f",
+                "url": "https://api.github.com/repos/davekok/stream/zipball/5cd6e1756988ea9aecdcd8cce2bbd55a5ab4db91",
+                "reference": "5cd6e1756988ea9aecdcd8cce2bbd55a5ab4db91",
                 "shasum": ""
-            },
-            "require": {
-                "psr/log": "^3.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "^1.6",
@@ -185,57 +137,7 @@
                 "source": "https://github.com/davekok/stream/tree/main",
                 "issues": "https://github.com/davekok/stream/issues"
             },
-            "time": "2021-11-07T14:41:44+00:00"
-        },
-        {
-            "name": "psr/log",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
-            },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2021-11-15T15:05:56+00:00"
         }
     ],
     "packages-dev": [
@@ -1610,16 +1512,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/65e8b7db476c5dd267e65eea9cab77584d3cfff9",
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
                 "shasum": ""
             },
             "require": {
@@ -1668,14 +1570,14 @@
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
-            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "homepage": "https://www.github.com/sebastianbergmann/exporter",
             "keywords": [
                 "export",
                 "exporter"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.4"
             },
             "funding": [
                 {
@@ -1683,7 +1585,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:24:23+00:00"
+            "time": "2021-11-11T14:18:36+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -2336,7 +2238,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "davekok/log": 20,
         "davekok/stream": 20,
         "davekok/lalr1": 20,
         "davekok/http": 20,

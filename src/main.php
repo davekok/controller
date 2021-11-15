@@ -6,6 +6,4 @@ namespace davekok\controller;
 
 include "vendor/autoload.php";
 
-(new KernelFactory(config: include "config.php"))
-    ->createKernel()
-    ->run();
+(new ControllerKernel(config: include "config.php"))->run();

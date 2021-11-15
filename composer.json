@@ -34,8 +34,6 @@
         }
     ],
     "require": {
-        "psr/log": "^3.0",
-        "davekok/log": "dev-main",
         "davekok/stream": "dev-main",
         "davekok/lalr1": "dev-main",
         "davekok/http": "dev-main"
