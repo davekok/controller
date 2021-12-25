@@ -9,34 +9,38 @@
             "email": "email@davekok.nl"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "davekok\\controller\\": "src/",
-            "davekok\\controller\\tests\\": "tests/"
-        }
-    },
+    "config": {
+        "bin-dir": "bin"
+    }
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/davekok/log"
+            "url": "https://github.com/davekok/system"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/davekok/stream"
+            "url": "https://github.com/davekok/kernel"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/davekok/lalr1"
+            "url": "https://github.com/davekok/parser"
         },
         {
             "type": "vcs",
             "url": "https://github.com/davekok/http"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/davekok/webpackage"
         }
     ],
     "require": {
-        "davekok/stream": "dev-main",
-        "davekok/lalr1": "dev-main",
-        "davekok/http": "dev-main"
+        "davekok/system": "dev-main",
+        "davekok/kernel": "dev-main",
+        "davekok/parser": "dev-main",
+        "davekok/http": "dev-main",
+        "davekok/webpackage": "dev-main",
+        "psr/log": "^3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

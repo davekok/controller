@@ -6,7 +6,8 @@ FROM php:8.1.0RC6
 RUN docker-php-ext-install pcntl
 COPY --from=composer /app/vendor /app/vendor
 COPY src /app/src
-EXPOSE 8080
 EXPOSE 8025
+EXPOSE 8080
+EXPOSE 8443
 WORKDIR /app
 CMD ["php", "/app/src/main.php"]

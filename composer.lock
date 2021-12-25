@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42ec62ed1ee8834ef389877cb067929d",
+    "content-hash": "0a787b11d5fd9a27d6050f8ca260a3ac",
     "packages": [
         {
             "name": "davekok/http",
@@ -138,6 +138,105 @@
                 "issues": "https://github.com/davekok/stream/issues"
             },
             "time": "2021-11-15T15:05:56+00:00"
+        },
+        {
+            "name": "davekok/webpackage",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davekok/webpackage.git",
+                "reference": "76277b58d33097301919024563d79f27d798c4c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davekok/webpackage/zipball/76277b58d33097301919024563d79f27d798c4c4",
+                "reference": "76277b58d33097301919024563d79f27d798c4c4",
+                "shasum": ""
+            },
+            "require": {
+                "davekok/lalr1": "dev-main",
+                "davekok/stream": "dev-main"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^9.2.x-dev",
+                "phpunit/phpunit": "^9.5"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/wpk"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "davekok\\webpackage\\": "src/",
+                    "davekok\\webpackage\\tests\\": "tests/"
+                }
+            },
+            "license": [
+                "UNLICENSE"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Kok",
+                    "email": "email@davekok.nl"
+                }
+            ],
+            "description": "Webpackage tool",
+            "support": {
+                "source": "https://github.com/davekok/webpackage/tree/main",
+                "issues": "https://github.com/davekok/webpackage/issues"
+            },
+            "time": "2021-11-22T04:56:06+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
+            },
+            "time": "2021-07-14T16:46:02+00:00"
         }
     ],
     "packages-dev": [
@@ -668,12 +767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9f37d464d6bc3cf1b379f785b66a2ce77bf523a6"
+                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9f37d464d6bc3cf1b379f785b66a2ce77bf523a6",
-                "reference": "9f37d464d6bc3cf1b379f785b66a2ce77bf523a6",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
+                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +828,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.9"
             },
             "funding": [
                 {
@@ -737,7 +836,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-06T06:50:45+00:00"
+            "time": "2021-11-19T15:21:02+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2241,6 +2340,7 @@
         "davekok/stream": 20,
         "davekok/lalr1": 20,
         "davekok/http": 20,
+        "davekok/webpackage": 20,
         "phpunit/php-code-coverage": 20
     },
     "prefer-stable": false,
